@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.dragster.android.information.system.my.android.activities.Ram_Act">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorRed"
+        android:gravity="center|top">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ram_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="RAM"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ram_tv1"
+                android:layout_alignTop="@+id/ram_tv1"
+                android:layout_alignBottom="@+id/ram_tv1"
+                android:src="@drawable/ic_ram_font" />
+
+        </RelativeLayout>
+<RelativeLayout
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/ran_gif"-->
+<!--        />-->
+    <ImageView
+       android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_ram_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/colorWhiteSmoke"
+        android:gravity="center|top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:gravity="center|top"
+            android:background="@color/colorBlueWhale"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+             android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ram" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Mobile"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Ram"
+                    android:textColor="@color/colorRed"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/ramRoundCorner_pb"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginEnd="10dp"
+                app:rcBackgroundColor="@color/colorWhite"
+                app:rcProgressColor="@color/colorRed"
+                app:rcRadius="3dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="99%"
+                        android:id="@+id/ramUsagePercent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorRed"
+                        android:text="4GB"
+                        android:id="@+id/ramUsed_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="1%"
+                        android:id="@+id/ramAvailablePercent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorRed"
+                        android:text="14GB"
+                        android:id="@+id/ramAvailable_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ramAmount_Tv"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="4 GB"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorRed"
+                        android:text="Total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ramAct_adv"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

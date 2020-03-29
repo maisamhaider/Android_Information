@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@color/colorBlueWhale"
+    tools:context="com.dragster.android.information.system.my.android.fragments.TodayDataUsageGraphs_Frag">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorGlacier"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/weeklyDataUsageDate_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:text="05"
+                />
+            <TextView
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/month_textview_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorWhite"
+                 android:layout_gravity="center"
+                android:id="@+id/weeklyDataUsageMonth_Tv"
+                android:text="March"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="@color/colorGlacier"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="7.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/weeklyBarChart_bc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorGlacier"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/weeklyBelowDataUsageDate_Tv"
+                android:text="05"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="@color/colorGlacier"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

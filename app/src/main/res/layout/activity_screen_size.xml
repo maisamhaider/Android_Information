@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/colorWhiteSmoke"
+     tools:context="com.dragster.android.information.system.my.android.activities.ScreenSize">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/colorBlueWhale"
+                android:fontFamily="@font/poppins_medium"
+                android:id="@+id/screenSize_tv1"
+                android:textSize="20sp"
+                android:text="SCREEN SIZE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/screenSize_tv1"
+                android:layout_alignBottom="@+id/screenSize_tv1"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/ic_screen_size_font" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/colorBlueWhale"
+            android:id="@+id/screenHeightAndWidth_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/screenSizeMobile_iv"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+
+            <View
+                android:layout_marginTop="80dp"
+                android:id="@+id/view1"
+                android:layout_width="2dp"
+                android:layout_height="123dp"
+                android:layout_marginStart="20dp"
+                 android:layout_weight="4"
+                android:background="@color/colorRed"
+                app:layout_constraintTop_toTopOf="@+id/screenSizeMobile_iv"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <TextView
+                android:id="@+id/screenInnerHeight_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="1280"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorRed"
+                android:textSize="30sp" />
+
+
+            <View
+                android:layout_marginBottom="66dp"
+                android:layout_width="2dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="4"
+                android:background="@color/colorRed" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/screenSizeMobile_iv"
+            android:layout_alignEnd="@+id/screenSizeMobile_iv"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="110dp"
+            android:layout_marginEnd="15dp"
+             android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_alignStart="@+id/screenSizeMobile_iv"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_weight="4.5"
+                android:background="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/screenInnerSizeWidth_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:text="720"
+                android:textColor="@color/colorRed"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="4.5"
+                android:background="@color/colorRed" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/screenSizeMobile_iv"
+            android:src="@drawable/ic_screen_size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    <LinearLayout
+         android:gravity="center|top"
+        android:orientation="vertical"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textColor="@color/colorBlueWhale"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/screenWidthHeight_Tv"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Height : "
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/colorSilver"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="PIXELS "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/screenSize_adv"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

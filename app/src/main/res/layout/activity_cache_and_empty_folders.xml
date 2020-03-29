@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.dragster.android.information.system.my.android.activities.CacheAndEmptyFolders">
+
+    <LinearLayout
+        android:background="@color/colorRed"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+      <RelativeLayout
+          android:layout_marginBottom="20dp"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:id="@+id/cacheAndEmptyFolders_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+                 android:fontFamily="@font/poppins_medium"
+              android:text="Cache And Empty Folders"
+              android:textColor="@color/colorWhite"
+              android:textSize="20sp" />
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignStart="@+id/cacheAndEmptyFolders_tv"
+              android:layout_alignTop="@+id/cacheAndEmptyFolders_tv"
+              android:layout_alignBottom="@+id/cacheAndEmptyFolders_tv"
+              android:layout_marginStart="3dp"
+                android:src="@drawable/ic_internet_speed_font" />
+      </RelativeLayout>
+        <ImageView
+            android:src="@drawable/ic_cache_and_empty_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="5"
+                android:background="@drawable/internet_data_usage_white_bg"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_cache" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="bottom"
+                    android:text="Cache"
+                    android:textColor="@color/colorBlueWhale"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/cacheSize_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="2"
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorSilver" />
+                <View
+                    android:background="@color/colorSilver"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"/>
+
+                <LinearLayout
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:id="@+id/clareCache_LL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginStart="5dp"
+                        android:text="Clare cache"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="5"
+                android:background="@drawable/internet_data_usage_white_bg"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_empty_folder" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="bottom"
+                    android:text="Empty Folders"
+                    android:textColor="@color/colorBlueWhale"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/emptyFoldersAmount_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="2"
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorSilver" />
+
+                <View
+                    android:background="@color/colorSilver"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"/>
+
+                <LinearLayout
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/deleteEmptyFolders_LL"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:text="delete empty folders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/cacheAndEmptyFolders_adv"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

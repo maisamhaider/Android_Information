@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Android App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">All</string>
+    <string name="tab_text_2">Recently Used</string>
+    <string name="tab_text_3">Less Used</string>
+    <string name="tab_text_4">Today Usage</string>
+    <string name="tab_text_5">Weekly Usage</string>
+    <string name="tab_text_6">Monthly Usage</string>
+<!--    3940256099942544/6300978111 test banner id-->
+    <string name="banner">ca-app-pub-7294466580019091/6415478079</string>
+    <string name="interstitial">ca-app-pub-7294466580019091/5944349569</string>
+     <string name="permissiontexts">In This Application (My Android App) you will see the list of applications installed on the device and can search, uninstall and run apps. Memory info of device and SD card,internet data usage feature,info about front and rear camera,Wi-fi network info,Battery info,Screen Display size and screen density info,Ram info,Some basic device info and you can test some hardware of the device.for these all features we need some permission to perform the application actions properly, (My Android) helps the user to see device information that may contain user personal data.We insure you that the user personal data or information is not collected by the company nor does the application host users data  </string>
+    <string name="permissionsexplanation">\t\n1.Phone State permission is required to get information about applications.\n\n2.Network state permission is required to access internet data usage information .\n\n3.Camera permission is required to get information about camera.\n\n4. Storage permission is required to get memory usage status.\n\n5. Access wifi state is required to check wifi on/off state </string>
+    <string name="by_accepting">By accepting you are agree to our <u><b>Terms and\n Conditions</b></u> </string>
+
+
+</resources>

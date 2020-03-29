@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".activities.Splash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@drawable/logo_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/splash_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="@string/app_name"
+                android:textColor="@color/colorBlueWhale"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/splash_tv1"
+                android:layout_alignTop="@+id/splash_tv1"
+                 android:layout_alignBottom="@+id/splash_tv1"
+                android:src="@drawable/ic_my_android_apps_font" />
+
+            <View
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_height="0.8dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/splash_tv1"
+                android:background="@color/colorBlueWhale" />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

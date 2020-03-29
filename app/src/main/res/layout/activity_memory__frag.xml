@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueWhale"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="2"
+    tools:context="com.dragster.android.information.system.my.android.activities.Memory_Act">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/memory_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Memory"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/memory_tv1"
+            android:layout_alignTop="@+id/memory_tv1"
+            android:layout_alignEnd="@+id/memory_tv1"
+            android:layout_alignBottom="@+id/memory_tv1"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_memory_font" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mobile_memory" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Mobile"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Memory"
+                    android:textColor="@color/colorRed"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/deviceStorageRoundCornerP_pb"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginEnd="10dp"
+                app:rcBackgroundColor="@color/colorWhite"
+                app:rcProgressColor="@color/colorRed"
+                app:rcRadius="3dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="99%"
+                        android:id="@+id/deviceUsageDataPercent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorRed"
+                        android:text="50GB"
+                        android:id="@+id/deviceUsedStorage_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <View
+                android:background="@color/colorWhite"
+                android:layout_width="1.5dp"
+                android:layout_height="50dp"/>
+            <LinearLayout
+                android:layout_marginStart="8dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/colorWhite"
+                    android:text="1%"
+                    android:id="@+id/deviceAvailableSpacePercent_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorRed"
+                    android:text="14GB"
+                    android:id="@+id/deviceAvailableSpace_Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="64 GB"
+                        android:id="@+id/deviceTotalSpace_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorRed"
+                        android:text="Total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/colorGlacier" />
+
+    <LinearLayout
+        android:id="@+id/sdCard_LL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="-50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_memory" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="   SD   "
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text=" Card"
+                    android:textColor="@color/colorRed"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/sdCardStorageRoundCornerP_pb"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginEnd="10dp"
+                app:rcBackgroundColor="@color/colorWhite"
+                app:rcProgressColor="@color/colorRed"
+                app:rcRadius="3dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="99%"
+                        android:id="@+id/sdUsageDataPercent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorRed"
+                        android:text="50GB"
+                        android:id="@+id/sdUsedStorage_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="1%"
+                        android:id="@+id/sdAvailableSpacePercent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorRed"
+                        android:text="14GB"
+                        android:id="@+id/sdAvailableSpace_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorWhite"
+                    android:layout_width="1.5dp"
+                    android:layout_height="50dp"/>
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/colorWhite"
+                        android:text="64 GB"
+                        android:id="@+id/sdTotalSpace_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorRed"
+                        android:text="Total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/memoryUsage_adv"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

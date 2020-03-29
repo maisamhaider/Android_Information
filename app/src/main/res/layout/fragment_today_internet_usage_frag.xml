@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:background="@color/colorWhiteSmoke"
+    tools:context="com.dragster.android.information.system.my.android.fragments.TodayInternetUsage_Frag">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:background="@drawable/internet_data_usage_white_bg"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+
+                android:background="@drawable/wifi_red_dot_bg"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:layout_weight="3"
+             android:textSize="30sp"
+            android:textColor="@color/colorBlueWhale"
+            android:text="Wi-Fi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/colorSilver"
+            android:layout_weight="2"
+            android:layout_marginStart="10dp"
+            android:text="199 Mb"
+             android:id="@+id/todayWifiNetUsage_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorSilver"
+                 android:layout_height="1dp"
+                android:layout_width="match_parent" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/todayWifiNext_iv"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="16dp"
+        android:background="@drawable/internet_data_usage_white_bg"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+
+                android:background="@drawable/mobile_glacier_dot_bg"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="10dp"
+            android:gravity="bottom"
+            android:layout_weight="3"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlueWhale"
+            android:text="Mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/colorSilver"
+            android:layout_weight="2"
+            android:layout_marginStart="10dp"
+            android:text="199 Mb"
+            android:id="@+id/todayMobileDataNetUsage_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorSilver"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/todayMobileNext_iv"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

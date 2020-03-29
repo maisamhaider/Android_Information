@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:orientation="vertical"
+    tools:context="com.dragster.android.information.system.my.android.activities.ConnectedInternet">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorRed"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/connectedInternet_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="INTERNET"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/connectedInternet_tv1"
+                android:layout_alignEnd="@+id/connectedInternet_tv1"
+                android:layout_alignBottom="@+id/connectedInternet_tv1"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="-2dp"
+                android:src="@drawable/ic_internet_font" />
+
+
+        </RelativeLayout>
+        <ImageView
+            android:src="@drawable/ic_internet_header"
+            android:id="@+id/wifiIsOnOrOff_Iv"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorWhite"
+            android:text="wifi name"
+            android:id="@+id/wifiName_Tv"
+             android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/colorWhiteSmoke"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:layout_weight="3.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <pl.droidsonroids.gif.GifImageView
+            android:src="@drawable/wifi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="@font/poppins_bold"
+            android:text="Wi_Fi"
+            android:textColor="@color/colorBlueWhale"
+            android:textSize="60sp"
+            android:id="@+id/internetType_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/colorSilver"
+            android:id="@+id/wifiLast_Tv"
+             android:text="You are connected to "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/connectedInternet_adv"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

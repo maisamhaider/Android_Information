@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteSmoke"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.dragster.android.information.system.my.android.activities.BatteryInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorRed"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/batteryStatus_Tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="BATTERY INFORMATION"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/batteryStatus_Tv1"
+                android:layout_alignTop="@+id/batteryStatus_Tv1"
+                android:layout_alignBottom="@+id/batteryStatus_Tv1"
+                android:layout_marginStart="1dp"
+                android:src="@drawable/ic_batteryinformationfont" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/battery_head_bg" />
+
+        <com.skydoves.progressview.ProgressView
+            android:id="@+id/batteryProgressView1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            app:progressView_autoAnimate="true"
+            app:progressView_colorBackground="@color/white"
+            app:progressView_colorProgress="@color/colorBlueWhale"
+            app:progressView_labelColorInner="@color/white"
+            app:progressView_labelSize="20sp"
+            app:progressView_labelSpace="4dp"
+            app:progressView_labelTypeface="bold"
+            app:progressView_orientation="vertical"
+            app:progressView_progressFromPrevious="true"
+            app:progressView_radius="12dp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/internet_data_usage_white_bg"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_batterytype" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="bottom"
+                        android:text="Battery Type"
+                        android:textColor="@color/colorBlueWhale"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/batteryType_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorSilver" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/internet_data_usage_white_bg"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_powersource" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="bottom"
+                        android:text="Power Source"
+                        android:textColor="@color/colorBlueWhale"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/powerSource_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorSilver" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/internet_data_usage_white_bg"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_temperature" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="bottom"
+                        android:text="Temperature"
+                        android:textColor="@color/colorBlueWhale"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/batteryTemperature_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorSilver" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/internet_data_usage_white_bg"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_batteryvoltage" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="bottom"
+                        android:text="Battery Voltage"
+                        android:textColor="@color/colorBlueWhale"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/batteryVoltage_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorSilver" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/internet_data_usage_white_bg"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_batterystatus" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="bottom"
+                        android:text="Status"
+                        android:textColor="@color/colorBlueWhale"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/batteryStatus_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorSilver" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/internet_data_usage_white_bg"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_health" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="bottom"
+                        android:text="Battery Health"
+                        android:textColor="@color/colorBlueWhale"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/batteryHealth_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/colorSilver" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/batteryInfo_adv"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

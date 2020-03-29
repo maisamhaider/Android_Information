@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteSmoke"
+
+    tools:context="com.dragster.android.information.system.my.android.activities.MyPhoneApps">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:background="@color/colorRed"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/myPhoneApps_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="My Phone Apps"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/myPhoneApps_tv1"
+            android:layout_alignEnd="@+id/myPhoneApps_tv1"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="-2dp"
+            android:src="@drawable/ic_my_phone_apps_font" />
+
+        <RelativeLayout
+            android:id="@+id/searchApps_RL"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/myPhoneApps_tv1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/searchlayout_bg">
+
+            <LinearLayout
+                android:id="@+id/searchIcon_LL"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/searchlayout_bg1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_search" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/myPhoneAppsSearch_Et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/myPhoneAppsCancel_Iv"
+                android:layout_toEndOf="@+id/searchIcon_LL"
+                android:background="@android:color/transparent"
+                android:hint="Start typing app name"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingStart="15dp" />
+
+            <ImageView
+                android:id="@+id/myPhoneAppsCancel_Iv"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_cancel" />
+
+        </RelativeLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchApps_RL"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/search_bar" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         android:layout_weight="6.5">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appsAppBar_Lo"
+             android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:background="@color/colorRed"
+            app:layout_constraintTop_toTopOf="@+id/apps_Vp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                app:tabMode="auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/apps_Vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

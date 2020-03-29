@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhiteSmoke"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.dragster.android.information.system.my.android.fragments.MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mainFragMenu_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="10dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_more" />
+
+        <TextView
+            android:id="@+id/myAndroidMain_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="My Android"
+            android:textColor="@color/colorBlueWhale"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/myAndroidDotMain_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/myAndroidMain_tv1"
+            android:layout_alignTop="@+id/myAndroidMain_tv1"
+            android:layout_alignEnd="@+id/myAndroidMain_tv1"
+            android:layout_alignBottom="@+id/myAndroidMain_tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="-16dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/ic_my_android" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/myAndroidMainGif_Gv"
+            android:layout_width="190dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/myAndroidDotMain_Iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/my_android_gif" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:scrollbars="none">
+
+        <include layout="@layout/innermainactivity_layout" />
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/mainFrag_adv"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

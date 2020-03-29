@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dragster.android.information.system.my.android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.DrawingActivty" />
+        <activity android:name=".activities.CacheAndEmptyFolders" />
+        <activity android:name=".activities.BatteryInfo" />
+        <activity android:name=".activities.HardwareTesting" />
+        <activity android:name=".activities.InternetSpeed" />
+        <activity android:name=".activities.Screenshot" />
+        <activity android:name=".activities.ScreenSize" />
+        <activity android:name=".activities.ScreenDensity" />
+        <activity android:name=".activities.Ram_Act" />
+        <activity android:name=".activities.MyPhoneApps" />
+        <activity android:name=".activities.Memory_Act" />
+        <activity android:name=".activities.InternetUsage" />
+        <activity android:name=".activities.ConnectedInternet" />
+        <activity android:name=".activities.CameraInfo" />
+        <activity android:name=".activities.AllBasicInfo" />
+        <activity android:name=".activities.DataUsageGraphsActivity" />
+        <activity android:name=".activities.TermsAndConditions"/>
+
+        <activity android:name=".activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity"/>
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7294466580019091~5318304238" />
+
+        <service
+            android:name=".pushnotification.FirebaseMessagingServiceClass"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

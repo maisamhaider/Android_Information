@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context="com.dragster.android.information.system.my.android.activities.InternetUsage">
+
+    <LinearLayout
+        android:background="@color/colorRed"
+        android:layout_weight="6.5"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="10"
+        android:layout_height="match_parent">
+        <RelativeLayout
+             android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/internetDataUsage_tv1"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="INTERNET DATA USAGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/internetDataUsage_tv1"
+                android:layout_alignTop="@+id/internetDataUsage_tv1"
+                android:layout_alignBottom="@+id/internetDataUsage_tv1"
+                 android:layout_marginTop="-7dp"
+                android:layout_marginBottom="-1dp"
+                android:src="@drawable/ic_internet_font" />
+        </RelativeLayout>
+        <RelativeLayout
+             android:layout_marginTop="15dp"
+            android:background="@drawable/internet_data_usage_dash_bg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:padding="20dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/internet_data_usage_solid_circel_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mainInternetDataTotalUsage_tv"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/colorBlueWhale"
+                    android:text="199"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:id="@+id/mainInternetDataPrefix_tv"
+                    android:textColor="@color/colorBlueWhale"
+                    android:text="Mb"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/internetDataUsage_tv2"
+                    android:textColor="@color/colorSilver"
+                    android:text="Total Usage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="3.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:gravity="center"
+            android:id="@+id/internetUsage_ABL"
+            android:layout_width="match_parent"
+            android:background="@color/colorRed"
+            android:layout_height="30dp">
+            <com.google.android.material.tabs.TabLayout
+                app:tabIndicatorGravity="bottom"
+                app:tabMode="auto"
+                android:id="@+id/intervalTabs_TL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/internetFrag_Vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/internetUsage_ABL" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/internetDataUsage_adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:orientation="horizontal"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:id="@+id/recentlyUsageAppsAdapterMain_LL"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/recentApplayout1234"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/recentAppIcon_Iv"
+            android:layout_marginStart="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="names"
+                android:layout_marginBottom="-2dp"
+                android:id="@+id/recentAppName_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorBlueWhale"
+                android:maxWidth="150dp"/>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:id="@+id/recentAppUsageTime_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSilver"
+                android:text="07 jun 16"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_cancel"
+            android:id="@+id/recentAppdeselect_Iv"
+            android:layout_marginEnd="12dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/recentApplayout1234"
+        android:background="@color/colorBlueWhale" />
+
+
+</RelativeLayout>
+
+</LinearLayout>

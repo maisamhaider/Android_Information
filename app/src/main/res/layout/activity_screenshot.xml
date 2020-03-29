@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteSmoke"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+    tools:context="com.dragster.android.information.system.my.android.activities.Screenshot">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/screenshot_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="SCREENSHOT"
+            android:textColor="@color/colorBlueWhale"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignTop="@+id/screenshot_tv1"
+            android:layout_alignBottom="@+id/screenshot_tv1"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginBottom="-3dp"
+            android:src="@drawable/ic_screenshot_font" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="6.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_previous"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="bottom|start"
+            android:id="@+id/screenShotLeft_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/screenShotMain_iv"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_screenshot1" />
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_next"
+            android:id="@+id/screenShotRight_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorSilver" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="The most common ways to take screenshot"
+        android:textColor="@color/colorBlueWhale" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorSilver" />
+
+</LinearLayout>

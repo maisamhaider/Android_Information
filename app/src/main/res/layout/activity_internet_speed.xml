@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+    tools:context="com.dragster.android.information.system.my.android.activities.InternetSpeed">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:background="@color/colorRed"
+        android:layout_weight="4"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+             android:layout_marginTop="20dp"
+             android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/internetSpeed_tv1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/colorWhite"
+                android:text="INTERNET SPEED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/internetSpeed_tv1"
+                android:layout_alignBottom="@+id/internetSpeed_tv1"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/ic_internet_speed_font" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_weight="8"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/ic_internet_speed_base" />
+
+
+            <ImageView
+                android:id="@+id/barImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/bar" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/colorWhiteSmoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/white_round_without_ripple_button_bg"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/startButton"
+                 android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@drawable/internetresetbuttonroundborder_bg"
+                 android:text="Start"
+                 android:textColor="@color/colorBlueWhale"
+                android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="@color/colorWhiteSmoke"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:background="@drawable/internet_data_usage_white_bg"
+                android:orientation="vertical"
+                android:layout_weight="5"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                 </RelativeLayout>
+                <TextView
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="3"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlueWhale"
+                    android:text="Download"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorSilver"
+                    android:layout_weight="2"
+                    android:id="@+id/downloadTextView"
+                    android:layout_marginStart="10dp"
+                    android:text="0.0 Mb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="16dp"
+                android:background="@drawable/internet_data_usage_white_bg"
+                android:orientation="vertical"
+                android:layout_weight="5"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="10dp"
+                    android:gravity="bottom"
+                    android:layout_weight="3"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlueWhale"
+                    android:text="Upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/colorSilver"
+                    android:layout_weight="2"
+                    android:id="@+id/uploadTextView"
+                    android:layout_marginStart="10dp"
+                    android:text="0.0 Mb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/internetSpeed_adv"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
